@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keshav Shah</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+
+<body style="overflow-x: hidden; z-index: 10000;">
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid d-flex align-items-center"
+      style="display: flex; justify-content: center; align-items: center; max-width: 25%;">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Keshav Shah
+        <button class="navbar-toggler bi bi-list" style="margin-left: 10px;" type="button" data-toggle="collapse"
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+        </button>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-center" style="gap: 10px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+
+          <a class="btn btn-primary d-flex justify-content-center align-items-center">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <canvas id="background"></canvas> <!-- Removed width attribute -->
+
+  <div class="w-100 h-100 flex-column" id="info">
+    <strong style="color: whitesmoke; font-size: 55px;">Hey! I'm Keshav</strong>
+    <p style="color: whitesmoke; font-size: 25px;">Programmer & Cybersecurity student</p>
+    <div class="d-flex justify-content-center gap-2">
+      <a class="btn bg-dark link bi bi-github" style="color: white;" href="https://github.com/KeshavCode6"> Github</a>
+      <a class="btn bg-dark link bi bi-backpack-fill" style="color: white;" href="/projects"> Projects</a>
+      <a class="btn bg-dark link bi bi-info-circle-fill" style="color: white;" href="/about"> About</a>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

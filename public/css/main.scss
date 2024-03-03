@@ -1,0 +1,31 @@
+// Define your custom primary color
+$primary: #295379;
+$secondary: #748CAB;
+$info: rgba(11, 31, 59, 0.9);
+$dark: #001852;
+$navbar-light-color: #c7c7c7;
+$navbar-light-active-color: #f0f0f0;
+$navbar-light-hover-color: $primary;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navbar {
+    background-color: $info;
+    font-size: large;
+    font-weight: 350 !important; 
+    justify-content: center !important;
+    z-index: 999 !important;
+    font-family: "Montserrat", sans-serif;
+
+    // Override Bootstrap's default navbar link styles
+    &.navbar-light .navbar-nav .nav-link {
+        color: $navbar-light-color; // Apply custom link color
+        &:hover {
+            color: $navbar-light-hover-color; // Apply custom hover color
+        }
+        &.active {
+            color: $navbar-light-active-color; // Apply custom active color
+        }
+    }
+}
