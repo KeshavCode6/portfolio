@@ -12,133 +12,153 @@
     <link h-100 rel="icon" href="assets/logo.svg" type="image/svg+xml">
 </head>
 
-<body style="z-index: 10000;">
+<body style="z-index: 10000; padding-top: 15%;">
     <script src="js/navbar.js"></script>
     <canvas id="background"></canvas> <!-- Removed width attribute -->
 
-    <div class="container w-100 h-100 flex-column centeredObj" id="about">
-        <div class="container d-flex justify-content-center align-items-center flex-column h-100">
-            <div class="row mb-1 w-100">
-                <div class="col-12 p-0 h-100">
-                    <div class="card bg-info text-white">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <div class="d-flex flex-column">
-                                    <h5 class="card-titled-flex justify-content-center">About me</h5>
-                                    <p>
-                                        Hello! My name is Keshav Shah. I am currently a cybersecurity and computer
-                                        science
-                                        student. I was hooked into the world
-                                        of computers where I started learning with Game Development. I eventually went
-                                        to
-                                        general purposes applications and now,
-                                        web development. In Web Development, I have good experience with HTML, CSS and
-                                        JS,
-                                        using Express.js as a backend and more.
-                                        I also have experience working with NoSQL databases like mongodb. I am
-                                        currently learning React and NextJS for my
-                                        future projects. <strong> See below for a list with some of my skills (gold
-                                            indicating a formal certifcation, hover over for more info)</strong> Also
-                                        take a look at my credly profile or resume if you are interested
-                                    </p>
+    <div class="container d-flex align-items-center flex-column p-0" style="z-index:1000000000000000; height: calc(100vh - 15%); width: 100vw;">
+        <div class="container w-100 h-100 flex-column">
+            <div class="container d-flex justify-content-center align-items-center flex-column h-100">
+                <div class="row mb-1 w-100">
+                    <div class="col-12 p-0 h-100">
+                        <div class="card bg-info text-white" id="about">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div class="d-flex flex-column" >
+                                        <h5 class="card-titled-flex justify-content-center">About me</h5>
+                                        <p>
+                                            Hello! My name is Keshav Shah. I am currently a cybersecurity and computer
+                                            science student. I was hooked into the world
+                                            of computers where I started learning with Game Development. I eventually
+                                            went
+                                            to general purposes applications and now,
+                                            web development. In Web Development, I have good experience with HTML, CSS
+                                            and
+                                            JS,using Express.js as a backend and more.
+                                            I also have experience working with NoSQL databases like mongodb. I am
+                                            currently learning React and NextJS for my
+                                            future projects. 
+                                            <strong> 
+                                                See below for a list with some of my skills (gold
+                                                indicating a formal certifcation, hover over for more info)
+                                            </strong>.
+                                            Take a look at my credly profile or resume for more information.
+                                            I am open to collaboration, but please note that I am still in highschool and under 18.
+                                        </p>
+                                    </div>
+                                    <img src="assets/logo.svg" class="img-thumbnail bg-black rounded-circle"
+                                        style="width:50%; aspect-ratio: 1/1;" alt="...">
                                 </div>
-                                <img src="assets/logo.svg" class="img-thumbnail bg-black rounded-circle"
-                                    style="width:50%; aspect-ratio: 1/1;" alt="...">
+                                <a class="text-secondary" target="_blank"
+                                    href="https://docs.google.com/document/d/1H8iyKOblaq3fqSJzmh5ZP65P08IzpALsJscFU_RNNnQ/edit?usp=sharing"
+                                    class="card-link h-100">See resume</a>
+                                <a class="text-secondary" style="margin-left:10px" target="_blank"
+                                    href="https://www.credly.com/users/keshav-shah.939947b9" class="card-link h-100">See
+                                    credly</a>
                             </div>
-                            <a class="text-secondary" target="_blank"
-                                href="https://docs.google.com/document/d/1H8iyKOblaq3fqSJzmh5ZP65P08IzpALsJscFU_RNNnQ/edit?usp=sharing"
-                                class="card-link h-100">See resume</a>
-                            <a class="text-secondary" style="margin-left:10px" target="_blank"
-                                href="https://www.credly.com/users/keshav-shah.939947b9" class="card-link h-100">See
-                                credly</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-1 mb-2" style="cursor:pointer;">
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow link h-100 bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 0.15s;">
+                            <img src="https://code-institute-org.github.io/Full-Stack-Web-Developer-Stream-0/assets/html5-css3.png"
+                                class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
+                                alt="...">
+                            <h5 class="mt-1">HTML/CSS</h5>
+                            <p class="card-container">I've been working with HTML and CSS for around a year and am
+                                fairly
+                                comfortable with it.</p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 0.3s;">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+                                class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
+                                alt="...">
+                            <h5 class="mt-1">React</h5>
+                            <p class="card-container">I've recently picked up React and am getting the hang of it</p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 0.3s;">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAADoCAMAAABVRrFMAAAAe1BMVEX///8AAADIyMihoaF3d3f5+fk7OzsoKChJSUn8/PwiIiLt7e2Li4uOjo7W1tbw8PCUlJSEhITd3d3Pz8/o6OiqqqrBwcF/f39aWlphYWFBQUGxsbG5ubmGhoZubm4UFBScnJwLCwsvLy9QUFBMTEw1NTVgYGBycnISEhKTb2OjAAAEJElEQVR4nO3b6XbaMBAFYA3YbCasxgTCDk3y/k9YmbJZnrHJOajj+NzvR5uapXPDWJYUxxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANXe0CfIm1C/AljrQr8CRsaFfgS1O7AF+aQ+0KPGmstCvwJAq0K/DlVNdL2WaqXYEnH3PtCjyZbLUr8CSkiXYJnix32hV40m9pV+BJQjWdfET0oV2CJ7137Qo8WVCoXYIfTUq0S7gYUcFp0SBeZGbEfzQDshPhtvAyov85aNpk8lAmJzPvdGRe0N3v7Z9bMdnBX5CcNJl4yjfkb3JItMsfXdDAORKQ1sp6RPOl2I8FycyU8lOoGfXdQ6rJYrEfi5KZNfWcIxOm21STmZ3Uj4XJTIucZXOPmQjrJjNSPxYns591ZoQPaJd/kl6ytzRZJPRjcTLzkXnZijrMc5ST2VOfG8PLktmh8HT7OjpfDHK0k9nL04x5sCxZl2h0/brFd7R6siHbj2XJHob+vjAKaSYbn/9ePTTWTWky+/Lt5ZnCRFg/mT1n8v1Ynsw24cacP3JhIqyXrH9NFjIjwBPJ7MCxMuZIX8LjmsnWl68a+VH7iWTnoX9He2lHuArJbBFuPz6TzGyoRSTuCFcimV19OP0orGKct+gRvYnvX41kA7cfG/R96uS4w/sfKqheM1n/8R/ZMhq0LH+HgPaUW5Y9PKqVbJ1ZUh2y/fjMeZYQxRsS9/GrkmyS7ccnktkr2cx0t+erGkczWebsH2UKeSJZ5zyrGpyvapzKJLNLtYe7U8qTjS6zqhE/069SsvixH0uTDW5Xso7w1Ooks0u1eymlq5j97Sy151tudyclJot9byWP7yusi+O9H8uSfT5cFRJ+IsIls09MqEeLHxX6Y/lkw3u5JclmmZMrYBcybLKBSZcG0qDzIvlkdql2LeZnOzwHbvEpJeOW8K/FJLNLtUs/Fic7OEuXmJh6hWQropPne3zmTLLw2o+FyQJqO0dsd+ZuaBSS2WF17LkbuWQ2UfPyt5wsYXa/P/ObxG6yeJYmC9P/9IsdTF9mTjvm6Ne/b35Bsoib4Nt1uXuHSyZZTJMhNft2pOkdk5m8qHsJPll3f45UMNdfsntVUyLnbs1MsjAYmsHnwn7W3eZxI64PXoNPZktMD9uVZ5vxndxmVa43d3dPbw4ScOeZScfMWP7JYDIV9weWzse8od1rC35aNxT2Zg5pP4a89Lj0hs4jofT+eiLaaZfgS5K/ONXF2P2ZZn30+MGlBqLa3qZokm/tCrwJ5M3f365d236M6js+Juvy5/xSgecpuaK63mJqT7X6jo9JXX/FxZhm5RYiL1PX29SNiWt7vTaTmt6pbmr8K98AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1V+uYyLfPDlVngAAAABJRU5ErkJggg=="
+                                class="img-thumbnail rounded-circle" style="width:75%; aspect-ratio: 1/1;" alt="...">
+                            <h5 class="mt-1">NextJS</h5>
+                            <p class="card-container">I picked up NextJS to work with React</p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 0.45s;">
+                            <img src="https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png"
+                                class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
+                                alt="...">
+                            <h5 class="mt-1">MongoDB</h5>
+                            <p class="card-container">This is the primary database system I am familier with and have
+                                used
+                                it for all my projects
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 0.75s;">
+                            <img src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
+                                class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
+                                alt="...">
+                            <h5 class="mt-1">ExpressJS</h5>
+                            <p class="card-container">I've used Express as a webserver for around year now and have used
+                                it
+                                to alongside other resources
+                                like passport to make functional websites
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 1s;">
+                            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                                class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
+                                alt="...">
+                            <h5 class="mt-1">Bootstrap</h5>
+                            <p class="card-container">
+                                I started to use bootstrap around a month ago and am also currently using it to make
+                                this
+                                website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col" style="min-width: 150px;">
+                        <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
+                            style="animation-delay: 1s;">
+                            <img src="https://i.pinimg.com/originals/da/3a/a7/da3aa7a36976feb8d8db5ad5383382cd.png"
+                                class="img-thumbnail bg-black rounded-circle"
+                                style="width:75%; aspect-ratio: 1/1; border-color: gold;" alt="...">
+                            <h5 class="mt-1">Office 365</h5>
+                            <p class="card-container">
+                                Not programming related, but I have experience with Microsoft Word, PPT and Excel with
+                                have
+                                formal certifications. See my
+                                <a class="text-secondary" target="_blank"
+                                    href="https://docs.google.com/document/d/1H8iyKOblaq3fqSJzmh5ZP65P08IzpALsJscFU_RNNnQ/edit?usp=sharing"
+                                    class="card-link h-100">
+                                    resume
+                                </a>
+                                or
+                                <a class="text-secondary" href="https://www.credly.com/users/keshav-shah.939947b9"
+                                    target="_blank">
+                                    credily
+                                </a>
+                                for more details
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-1 mb-2" style="cursor:pointer;">
-                <div class="col">
-                    <div class="card interest grow link h-100 bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 0.15s;">
-                        <img src="https://code-institute-org.github.io/Full-Stack-Web-Developer-Stream-0/assets/html5-css3.png"
-                            class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
-                            alt="...">
-                        <h5 class="mt-1">HTML/CSS</h5>
-                        <p class="card-container">I've been working with HTML and CSS for around a year and am fairly
-                            comfortable with it.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 0.3s;">
-                        <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
-                            class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
-                            alt="...">
-                        <h5 class="mt-1">React</h5>
-                        <p class="card-container">I've recently picked up React and am getting the hang of it and will
-                            use it for my future projects. I am planning to get certified in it at some point.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 0.3s;">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAADoCAMAAABVRrFMAAAAe1BMVEX///8AAADIyMihoaF3d3f5+fk7OzsoKChJSUn8/PwiIiLt7e2Li4uOjo7W1tbw8PCUlJSEhITd3d3Pz8/o6OiqqqrBwcF/f39aWlphYWFBQUGxsbG5ubmGhoZubm4UFBScnJwLCwsvLy9QUFBMTEw1NTVgYGBycnISEhKTb2OjAAAEJElEQVR4nO3b6XbaMBAFYA3YbCasxgTCDk3y/k9YmbJZnrHJOajj+NzvR5uapXPDWJYUxxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANXe0CfIm1C/AljrQr8CRsaFfgS1O7AF+aQ+0KPGmstCvwJAq0K/DlVNdL2WaqXYEnH3PtCjyZbLUr8CSkiXYJnix32hV40m9pV+BJQjWdfET0oV2CJ7137Qo8WVCoXYIfTUq0S7gYUcFp0SBeZGbEfzQDshPhtvAyov85aNpk8lAmJzPvdGRe0N3v7Z9bMdnBX5CcNJl4yjfkb3JItMsfXdDAORKQ1sp6RPOl2I8FycyU8lOoGfXdQ6rJYrEfi5KZNfWcIxOm21STmZ3Uj4XJTIucZXOPmQjrJjNSPxYns591ZoQPaJd/kl6ytzRZJPRjcTLzkXnZijrMc5ST2VOfG8PLktmh8HT7OjpfDHK0k9nL04x5sCxZl2h0/brFd7R6siHbj2XJHob+vjAKaSYbn/9ePTTWTWky+/Lt5ZnCRFg/mT1n8v1Ynsw24cacP3JhIqyXrH9NFjIjwBPJ7MCxMuZIX8LjmsnWl68a+VH7iWTnoX9He2lHuArJbBFuPz6TzGyoRSTuCFcimV19OP0orGKct+gRvYnvX41kA7cfG/R96uS4w/sfKqheM1n/8R/ZMhq0LH+HgPaUW5Y9PKqVbJ1ZUh2y/fjMeZYQxRsS9/GrkmyS7ccnktkr2cx0t+erGkczWebsH2UKeSJZ5zyrGpyvapzKJLNLtYe7U8qTjS6zqhE/069SsvixH0uTDW5Xso7w1Ooks0u1eymlq5j97Sy151tudyclJot9byWP7yusi+O9H8uSfT5cFRJ+IsIls09MqEeLHxX6Y/lkw3u5JclmmZMrYBcybLKBSZcG0qDzIvlkdql2LeZnOzwHbvEpJeOW8K/FJLNLtUs/Fic7OEuXmJh6hWQropPne3zmTLLw2o+FyQJqO0dsd+ZuaBSS2WF17LkbuWQ2UfPyt5wsYXa/P/ObxG6yeJYmC9P/9IsdTF9mTjvm6Ne/b35Bsoib4Nt1uXuHSyZZTJMhNft2pOkdk5m8qHsJPll3f45UMNdfsntVUyLnbs1MsjAYmsHnwn7W3eZxI64PXoNPZktMD9uVZ5vxndxmVa43d3dPbw4ScOeZScfMWP7JYDIV9weWzse8od1rC35aNxT2Zg5pP4a89Lj0hs4jofT+eiLaaZfgS5K/ONXF2P2ZZn30+MGlBqLa3qZokm/tCrwJ5M3f365d236M6js+Juvy5/xSgecpuaK63mJqT7X6jo9JXX/FxZhm5RYiL1PX29SNiWt7vTaTmt6pbmr8K98AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/1V+uYyLfPDlVngAAAABJRU5ErkJggg=="
-                            class="img-thumbnail rounded-circle" style="width:75%; aspect-ratio: 1/1;" alt="...">
-                        <h5 class="mt-1">NextJS</h5>
-                        <p class="card-container">I picked up NextJS to work with React</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 0.45s;">
-                        <img src="https://www.pngall.com/wp-content/uploads/13/Mongodb-PNG-Image-HD.png"
-                            class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
-                            alt="...">
-                        <h5 class="mt-1">MongoDB</h5>
-                        <p class="card-container">This is the primary database system I am familier with and have used
-                            it for all my projects</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 0.75s;">
-                        <img src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
-                            class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
-                            alt="...">
-                        <h5 class="mt-1">ExpressJS</h5>
-                        <p class="card-container">I've used Express as a webserver for around year now and have used it
-                            to alongside other resources
-                            like passport to make functional websites</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 1s;">
-                        <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
-                            class="img-thumbnail bg-black rounded-circle" style="width:75%; aspect-ratio: 1/1;"
-                            alt="...">
-                        <h5 class="mt-1">Bootstrap</h5>
-                        <p class="card-container">
-                            I started to use bootstrap around a month ago and am also currently using it to make this
-                            website.
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card interest grow bg-info text-white d-flex flex-column align-items-center p-3 link h-100"
-                        style="animation-delay: 1s;">
-                        <img src="https://i.pinimg.com/originals/da/3a/a7/da3aa7a36976feb8d8db5ad5383382cd.png"
-                            class="img-thumbnail bg-black rounded-circle"
-                            style="width:75%; aspect-ratio: 1/1; border-color: gold;" alt="...">
-                        <h5 class="mt-1">Office 365</h5>
-                        <p class="card-container">
-                            Not programming related, but I have experience with Microsoft Word, PPT and Excel with have
-                            formal certifications. See my <a class="text-secondary" target="_blank"
-                                href="https://docs.google.com/document/d/1H8iyKOblaq3fqSJzmh5ZP65P08IzpALsJscFU_RNNnQ/edit?usp=sharing"
-                                class="card-link h-100">resume</a> for more details
-                    </div>
-                </div>
-            </div>
         </div>
-
 
         <script src="js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

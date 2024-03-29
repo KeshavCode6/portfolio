@@ -42,7 +42,9 @@
 }
 
 #about {
-    animation: slidein 0.75s forwards;
+    position: relative;
+    animation: slidein 1s forwards;
+    /* 2s duration */
 }
 
 
@@ -58,15 +60,13 @@
 
 @keyframes slidein {
     0% {
-        position: absolute;
-        left: 0;
+        transform: translateX(-100vw);
     }
 
-    100% {
-        position: absolute;
+    60% {
+        transform: translateX(1vw);
     }
 }
-
 
 .link {
     opacity: 0;
