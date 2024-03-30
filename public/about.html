@@ -10,13 +10,22 @@
     <link h-100 rel="stylesheet" href="css/index.css">
     <link h-100 rel="stylesheet" href="css/main.css">
     <link h-100 rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+    <style>
+        @media only screen and (max-width: 800px) {
+            #pfp{
+                display: none;
+            }
+        }
+    </style>
 </head>
 
 <body style="z-index: 10000; padding-top: 15%;">
     <script src="js/navbar.js"></script>
     <canvas id="background"></canvas> <!-- Removed width attribute -->
 
-    <div class="container d-flex align-items-center flex-column p-0" style="z-index:1000000000000000; height: calc(100vh - 15%); width: 100vw;">
+    <div class="container d-flex align-items-center flex-column p-0"
+        style="z-index:1000000000000000; height: calc(100vh - 15%); width: 100vw;">
         <div class="container w-100 h-100 flex-column">
             <div class="container d-flex justify-content-center align-items-center flex-column h-100">
                 <div class="row mb-1 w-100">
@@ -24,7 +33,7 @@
                         <div class="card bg-info text-white" id="about">
                             <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <div class="d-flex flex-column" >
+                                    <div class="d-flex flex-column">
                                         <h5 class="card-titled-flex justify-content-center">About me</h5>
                                         <p>
                                             Hello! My name is Keshav Shah. I am currently a cybersecurity and computer
@@ -37,16 +46,17 @@
                                             JS,using Express.js as a backend and more.
                                             I also have experience working with NoSQL databases like mongodb. I am
                                             currently learning React and NextJS for my
-                                            future projects. 
-                                            <strong> 
+                                            future projects.
+                                            <strong>
                                                 See below for a list with some of my skills (gold
                                                 indicating a formal certifcation, hover over for more info)
                                             </strong>.
                                             Take a look at my credly profile or resume for more information.
-                                            I am open to collaboration, but please note that I am still in highschool and under 18.
+                                            I am open to collaboration, but please note that I am still in highschool
+                                            and under 18.
                                         </p>
                                     </div>
-                                    <img src="assets/logo.svg" class="img-thumbnail bg-black rounded-circle"
+                                    <img src="assets/logo.svg" id="pfp" class="img-thumbnail bg-black rounded-circle"
                                         style="width:50%; aspect-ratio: 1/1;" alt="...">
                                 </div>
                                 <a class="text-secondary" target="_blank"
