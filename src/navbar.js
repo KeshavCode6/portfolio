@@ -2,14 +2,19 @@ const navbar = `
 <nav class="navbar fixed-top navbar-expand-lg">
 <div class="container-fluid d-flex align-items-center"
   style="display: flex; justify-content: center; align-items: center; max-width: 25%;">
+  <div class="d-flex">
   <a class="navbar-brand" href="/">
     <img src="assets/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
     Keshav Shah
-    <button class="navbar-toggler bi bi-list" style="margin-left: 10px;" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-    </button>
   </a>
+  <button class="navbar-toggler" style="margin-left: 10px;" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </button>
+  </div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav justify-content-center" style="gap: 10px;">
       <li class="nav-item">
