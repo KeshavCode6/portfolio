@@ -27,6 +27,9 @@ const navbar = `
         <a class="nav-link" href="achievements.html">Achievements</a>
       </li>
       <li class="nav-item">
+      <a class="nav-link" href="education.html">Education</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="projects.html">Projects</a>
       </li>
       <div class="dropdown">
