@@ -18,30 +18,550 @@
                 width: fit-content;
                 font-size: smaller;
             }
-            .text-smaller{
-                font-size:large;
+
+            .text-smaller {
+                font-size: large;
+            }
+
+            .imgAch {
+                width: 20vw;
             }
         }
-
         .icon-svg {
             min-width: 32px;
             height: 32px;
             /* Adjust the size as needed */
+        }
+
+        .card {
+            min-height: 18vh;
+        }
+
+        .imgAch {
+            max-height: 15vh;
         }
     </style>
 </head>
 
 <body style="z-index: 10000; padding-top: 65px;">
     <script src="js/navbar.js"></script>
-    <canvas id="background"></canvas>
+    <canvas id="background" width="1920" height="951"></canvas>
     <div class="container d-flex align-items-center flex-column p-0"
         style="z-index:1000000000000000; height: calc(100vh - 65px); width: 100vw;">
-        <div class="container flex-column w-75" id="achievements">
-           
+        <div class="container flex-column w-95" id="achievements">
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                SANS Gfact Certified
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    May 29th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Passed the Sans GFACT SEC275 Cybersecurity certification with a 97% on the exam
+                            </p>
+                            <img src="assets/pictures/gfact.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Cybersecurity Club Committee Member
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    April 29th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Became a Committee Member at my school's coding club
+                            </p>
+                            <img src="assets/pictures/alliance.jpeg" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Coding Club Officer
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    April 24th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Became V.P of Development at my school's coding club
+                            </p>
+                            <img src="assets/pictures/alliance.jpeg" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                NCL Team Game
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    April 22nd, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Placed 2/647 nationally in hs bracket (27/4199 globally) in my first NCL team game
+                            </p>
+                            <img src="assets/pictures/ncl.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                NCL Individual Game
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    April 7th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Placed 32/1210 nationally in the highschool bracket (251/7403 globally) in my first ever
+                                NCL individual game
+                            </p>
+                            <img src="assets/pictures/ncl.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Cyberstart Top Player in Georgia
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    April 22nd, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Became one of the top players in Georgia and won access to a $3000 cybersecurity course
+                            </p>
+                            <img src="assets/pictures/sans.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Microsoft Word Certification
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    March 28th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Officially Microsoft Office 365 Word Certified
+                            </p>
+                            <img src="assets/pictures/word.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Microsoft Excel Certification
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    March 11th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Officially Microsoft Excel 365 Certified
+                            </p>
+                            <img src="assets/pictures/excel.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                3rd place at State Level Tech Fair
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    March 2nd, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Won 3rd place at the Georgia State Tech Fair by GaSTC for internet applications
+                            </p>
+                        </div>
+                        <img src="assets/pictures/gastc.jpg" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch" style="width: 10vw;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-calendar-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Microsoft PPT Certification
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    February 17th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Officially Microsoft Office 2019 Powerpoint Certified
+                            </p>
+                            <img src="assets/pictures/ppt.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Vex State Robotics Comp.
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    February 9th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                My first ever Vex Robotics State Competition
+                            </p>
+                            <img src="assets/pictures/vex.jpg" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                1st place at regional level
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    January 20th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                1st place at regional tech fair by GaSTC for internet applications
+                            </p>
+                            <img src="assets/pictures/lanier.jpg" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                Vex Excellence Award
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    January 28th, 2024
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Won Vex's Excellence Award with my team
+                            </p>
+                            <img src="assets/pictures/vexexe.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white mb-1 link grow">
+                <div class="card-body p-4">
+                    <div class="row">
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-award-fill icon-svg" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z">
+                                </path>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"></path>
+                            </svg>
+
+                        </div>
+                        <div class="col">
+                            <h5 class="fs-4" style="max-width: 60%;">
+                                First Hackathon
+                                <span class="bg-primary rounded fs-6 p-1 date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>
+                                    October 28th, 2023
+
+                                </span>
+                            </h5>
+                            <p class="mb-0" style="max-width: 60%;">
+                                Won HackGwinnett's Best Humanitarian
+                            </p>\
+                            <img src="assets/pictures/hackgwinnet.png" class="img-thumbnail position-absolute top-50 end-0 translate-middle imgAch">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
     <script src="js/index.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -53,7 +573,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
         integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="js/achievements.js"></script>
 </body>
 
 </html>
